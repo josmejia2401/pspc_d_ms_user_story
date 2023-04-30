@@ -10,8 +10,7 @@ export function updateItemAdapter(): Fn {
                 name: event.body.name,
                 status: event.body.status,
                 startedAt: event.body.startedAt || "",
-                completedAt: event.body.completedAt || "",
-                projectId: event.body.projectId,
+                completedAt: event.body.completedAt || ""
             }, options);
             return {
                 "headers": {},

@@ -12,7 +12,6 @@ export async function updateItemHandler(event: any, _context: any) {
             status: Joi.number().optional(),
             startedAt: Joi.date().optional(),
             completedAt: Joi.date().optional(),
-            projectId: Joi.string().required(),
         }).required(),
         pathSchema: Joi.object({
             id: Joi.string().required(),
